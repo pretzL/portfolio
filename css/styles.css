@@ -1,0 +1,64 @@
+/* GLOBALS */
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  line-height: 1;
+  cursor: pointer;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0;
+  margin: 0;
+}
+
+/* VARIABLES */
+
+:root {
+  --variable: 1rem;
+}
+
+/* CONTENT CONTAINER */
+
+.content-container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+/* FLEX REUSABLES */
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* MAIN ELEMENTS */

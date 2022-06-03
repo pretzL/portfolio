@@ -116,8 +116,11 @@ footer {
 
 .slider-wrapper {
   width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .slider {
@@ -128,7 +131,7 @@ footer {
   flex-grow: 1;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  position: relative;
   transform: translateY(calc(var(--carousel-index) * -100%));
   transition: transform 300ms ease-in-out;
 }
@@ -136,9 +139,8 @@ footer {
 .slider > .slider-page {
   flex: 0 0 calc(100% / var(--items-per-screen));
   max-width: calc(100% / var(--items-per-screen));
-  height: calc(100% / var(--items-per-screen));
+  height: 100vh;
   aspect-ratio: 16 / 9;
-  padding: 0.5rem;
 }
 
 .slider-page {

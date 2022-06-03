@@ -9,6 +9,7 @@ let lastScrollTop = 0;
 
 window.addEventListener("scroll", () => {
   let st = window.pageYOffset || document.scrollTop;
+  console.log(st);
   if (st > lastScrollTop) {
     sliderContainer.style.setProperty("--carousel-index", carouselIndex + 1);
   } else {
@@ -18,5 +19,5 @@ window.addEventListener("scroll", () => {
       sliderContainer.style.setProperty("--carousel-index", 0);
     }
   }
-  lastScrollTop = st <= 0 ? 0 : st;
+  lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
 });

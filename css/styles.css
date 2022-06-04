@@ -100,19 +100,6 @@ main {
   min-height: 80vh;
 }
 
-footer {
-  width: 100%;
-  padding-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 1rem;
-  color: black;
-  background-color: var(--dark-grey);
-  margin-top: auto;
-}
-
 /* OTHER ELEMENTS */
 
 .slider-wrapper {
@@ -141,17 +128,27 @@ footer {
   align-items: center;
 }
 
-.slider-page-one {
+.slider-page:nth-child(1) {
   background-color: #3b47d4;
 }
 
-.slider-page-two {
+.slider-page:nth-child(2) {
   background-color: #fc6c7c;
   color: #2c2c2c;
 }
 
-.slider-page-three {
+.slider-page:nth-child(3) {
   background-color: #4deb87;
+  color: #2c2c2c;
+}
+
+.slider-page:nth-child(4) {
+  background-color: #d4bb3b;
+  color: #2c2c2c;
+}
+
+.slider-page:nth-child(5) {
+  background-color: #ec5642;
   color: #2c2c2c;
 }
 

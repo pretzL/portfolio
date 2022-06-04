@@ -252,4 +252,14 @@ footer {
 /* DESKTOP */
 
 @media only screen and (min-width: 1080px) {
+  .slider-cards {
+    flex-direction: row;
+  }
+
+  .slider-cards > .card {
+    grid-template-areas:
+      "card-grid1"
+      "card-grid2"
+      "card-grid3";
+  }
 }

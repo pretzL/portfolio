@@ -149,7 +149,6 @@ main {
 
 .slider-page:nth-child(5) {
   background-color: #ec5642;
-  color: #2c2c2c;
 }
 
 .slider-page-content {
@@ -192,7 +191,11 @@ main {
 
 .card h4,
 .card p {
-  margin-left: 0.5rem;
+  margin: 0.25rem 0 0.25rem 1rem;
+}
+
+.card p {
+  font-size: 0.8rem;
 }
 
 .slider-page-content {

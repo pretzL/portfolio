@@ -168,10 +168,9 @@ main {
   color: black;
   display: grid;
   grid-template-areas:
-    "card-grid1"
-    "card-grid2"
-    "card-grid3"
-    "card-grid4";
+    "card-grid1 card-grid2"
+    "card-grid1 card-grid3"
+    "card-grid1 card-grid4";
 }
 
 .card-grid1 {
@@ -249,11 +248,14 @@ main {
 /* Tooltip icons from https://codepen.io/abdelrhmansaid/pen/OJRNOpQ */
 
 .icon {
-  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
   color: black;
   cursor: pointer;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   background: white;
   border-radius: 50%;
   padding: 0.5rem;
@@ -276,10 +278,11 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
 }
 
 .tooltip {
+  display: none;
   font-size: 1rem;
   background: white;
   color: black;
@@ -323,6 +326,16 @@ main {
   .card img {
     border-radius: 5px 0 0 0;
   }
+
+  .tooltip {
+    display: block;
+  }
+
+  .icon {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+  }
 }
 
 /* DESKTOP */
@@ -332,7 +345,7 @@ main {
     flex-direction: row;
   }
 
-  .slider-cards > .card {
+  .card {
     grid-template-areas:
       "card-grid1"
       "card-grid2"

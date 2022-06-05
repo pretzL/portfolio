@@ -41,7 +41,7 @@ h5 {
 
 :root {
   --dark-grey: #343b4a;
-  --light-grey: #e5e5e5;
+  --light-grey: #e5e5e5d9;
 }
 
 /* CONTENT CONTAINER */
@@ -161,15 +161,17 @@ main {
   gap: 1rem;
 }
 
-.slider-cards > .card {
+.card {
   background-color: var(--light-grey);
   box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
   border-radius: 5px;
   color: black;
   display: grid;
   grid-template-areas:
-    "card-grid1 card-grid2"
-    "card-grid1 card-grid3";
+    "card-grid1"
+    "card-grid2"
+    "card-grid3"
+    "card-grid4";
 }
 
 .card-grid1 {
@@ -242,11 +244,81 @@ main {
   color: white;
 }
 
+/* ICONS */
+
+/* Tooltip icons from https://codepen.io/abdelrhmansaid/pen/OJRNOpQ */
+
+.icon {
+  font-size: 24px;
+  color: black;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  padding: 0.5rem;
+  box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+}
+
+.social-icons-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  padding-right: 1rem;
+}
+
+.social-icons-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.tooltip {
+  font-size: 1rem;
+  background: white;
+  color: black;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+}
+
+.social-icons:hover .tooltip,
+.social-icons:hover .icon {
+  color: white;
+  background: black;
+}
+
+.all-projects-container {
+  height: 80vh;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 /* MEDIA QUERIES */
 
 /* TABLET */
 
 @media only screen and (min-width: 767px) {
+  .card p {
+    font-size: 1rem;
+  }
+
+  .all-projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    grid-template-areas:
+      "card-grid1 card-grid2"
+      "card-grid1 card-grid3";
+  }
 }
 
 /* DESKTOP */
@@ -261,5 +333,10 @@ main {
       "card-grid1"
       "card-grid2"
       "card-grid3";
+  }
+
+  .all-projects-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 }

@@ -42,6 +42,7 @@ h5 {
 :root {
   --dark-grey: #343b4a;
   --light-grey: #e5e5e5d9;
+  --border: 1px solid;
 }
 
 /* CONTENT CONTAINER */
@@ -237,6 +238,10 @@ h4 {
   gap: 2rem;
 }
 
+.contact-page {
+  gap: 1rem;
+}
+
 /* NAVIGATION */
 
 .navbar,
@@ -275,9 +280,69 @@ h4 {
   color: white;
 }
 
-/* ICONS */
+/* FORMS */
 
-/* Tooltip icons from https://codepen.io/abdelrhmansaid/pen/OJRNOpQ */
+.validator-container {
+  display: none;
+  border: var(--border) green;
+  color: green;
+  width: 300px;
+  margin: 1rem auto;
+  padding: 0.3rem 0.5rem;
+  text-align: center;
+}
+
+.form-error {
+  display: none;
+  color: red;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+  background-color: var(--light-grey);
+  width: 90%;
+  border: var(--border) black;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.contact-form input,
+.message-input {
+  font-family: "Commissioner", sans-serif;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.form-input {
+  width: 80%;
+}
+
+.btn {
+  background-color: var(--dark-grey);
+  box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+  color: white;
+  width: 140px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+textarea {
+  resize: none;
+}
+
+/* ICONS */
 
 .icon {
   display: flex;
@@ -382,6 +447,12 @@ h4 {
 
   .view-more-container {
     font-size: 1.1rem;
+  }
+
+  .contact-form {
+    width: 40%;
+    padding-top: 2rem;
+    margin-bottom: 3rem;
   }
 }
 

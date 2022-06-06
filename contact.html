@@ -22,11 +22,44 @@
           </nav>
         </header>
         <main>
-          <h1>Contact Me</h1>
+          <div class="slider-page slider-page-one contact-page">
+            <h1>Contact Me</h1>
+            <div class="validator-container"><p>Form sent!</p></div>
+            <form class="contact-form">
+              <div class="form-input">
+                <label>
+                  Name (required)
+                  <input name="your-name" id="your-name" />
+                </label>
+                <div class="form-error" id="your-name-error">Please enter your name, must be 5 characters or more</div>
+              </div>
+              <div class="form-input">
+                <label>
+                  Email (required)
+                  <input type="email" name="your-email" id="your-email" />
+                  <div class="form-error" id="email-error">Please enter a valid email address</div>
+                </label>
+              </div>
+              <div class="form-input">
+                <label>
+                  Subject (required)
+                  <input name="your-subject" id="your-subject" />
+                  <div class="form-error" id="subject-error">Your subject must be at least 15 characters</div>
+                </label>
+              </div>
+              <div class="form-input">
+                <label>
+                  Message (required)
+                  <textarea name="your-message" id="your-message" rows="5" class="message-input"></textarea>
+                  <div class="form-error" id="message-error">Your message must be at least 25 characters</div>
+                </label>
+              </div>
+              <button class="btn form-btn">Submit</button>
+            </form>
+          </div>
         </main>
-        <footer></footer>
       </div>
     </div>
-    <script src="js/index.js" type="module"></script>
+    <script src="js/contact.js" type="module"></script>
   </body>
 </html>

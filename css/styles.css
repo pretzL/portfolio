@@ -213,8 +213,8 @@ h4 {
 
 .all-projects-container {
   max-height: 80vh;
-  overflow: hidden;
   display: grid;
+  justify-content: center;
   grid-template-columns: 1fr;
 }
 

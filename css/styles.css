@@ -389,12 +389,19 @@ textarea {
 
 .tooltip {
   display: none;
+  position: absolute;
   font-size: 1rem;
   background: white;
   color: black;
   padding: 0.3rem 0.5rem;
   border-radius: 5px;
   box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+  top: 70%;
+  z-index: 999;
+}
+
+.tooltip-active {
+  display: block;
 }
 
 .social-icons:hover .tooltip,
@@ -435,10 +442,6 @@ textarea {
 
   .card img {
     border-radius: 5px 0 0 0;
-  }
-
-  .tooltip {
-    display: block;
   }
 
   .icon {

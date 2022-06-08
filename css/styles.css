@@ -159,6 +159,10 @@ main {
 }
 
 .slider-page-content {
+  width: 80%;
+}
+
+.slider-page-five .slider-page-content {
   width: 90%;
 }
 

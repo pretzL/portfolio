@@ -225,12 +225,13 @@ h4 {
 }
 
 .view-more-container {
+  margin-top: 2rem;
   align-self: flex-end;
 }
 
 .inline-link {
   color: white;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .inline-link:hover {
@@ -543,5 +544,9 @@ textarea {
     font-size: 36px;
     width: 64px;
     height: 64px;
+  }
+
+  .inline-link {
+    text-decoration: none;
   }
 }

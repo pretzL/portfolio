@@ -1,3 +1,5 @@
+// Handle the hover state for social icons, hover on/off
+
 const iconButton = document.querySelectorAll(".social-icons");
 
 iconButton.forEach((e) => {

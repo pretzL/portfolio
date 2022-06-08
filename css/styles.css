@@ -154,6 +154,7 @@ main {
 }
 
 .slider-page:nth-child(5) {
+  padding: 80px 0;
   background-color: #ec5642;
 }
 
@@ -380,11 +381,11 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
+  font-size: 18px;
   color: black;
   cursor: pointer;
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   background: white;
   border-radius: 50%;
   padding: 0.5rem;

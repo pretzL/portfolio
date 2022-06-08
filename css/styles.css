@@ -235,6 +235,7 @@ h4 {
 .contact-icons {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 2rem;
   gap: 2rem;
 }
@@ -429,7 +430,8 @@ textarea {
 }
 
 .social-icons:hover .tooltip,
-.social-icons:hover .icon {
+.social-icons:hover .icon,
+.icon-large:hover {
   color: white;
   background: black;
 }

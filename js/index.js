@@ -40,14 +40,14 @@ function moveCarousel(button) {
 
   if (button.classList.contains("left-arrow")) {
     if (carouselIndex - 1 < 0) {
-      carouselContainer.style.setProperty("--carousel-index", 4 / itemsPerScreen - 1);
+      carouselContainer.style.setProperty("--carousel-index", carouselContainer.childElementCount / itemsPerScreen - 1);
     } else {
       carouselContainer.style.setProperty("--carousel-index", carouselIndex - 1);
     }
   }
 
   if (button.classList.contains("right-arrow")) {
-    if (carouselIndex + 1 >= 4 / itemsPerScreen) {
+    if (carouselIndex + 1 >= carouselContainer.childElementCount / itemsPerScreen) {
       carouselContainer.style.setProperty("--carousel-index", 0);
     } else {
       carouselContainer.style.setProperty("--carousel-index", carouselIndex + 1);

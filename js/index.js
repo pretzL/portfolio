@@ -18,6 +18,23 @@ iconButton.forEach((e) => {
 
 // CAROUSEL FROM https://www.youtube.com/watch?v=yq4BeRtUHbk
 
+// Show or hide carousel buttons
+
+const carouselContainer = document.querySelector(".all-projects-container");
+const arrow = document.querySelectorAll(".arrow");
+
+carouselContainer.addEventListener("mouseover", () => {
+  arrow.forEach((e) => {
+    e.style.opacity = "1";
+  });
+});
+
+carouselContainer.addEventListener("mouseout", () => {
+  arrow.forEach((e) => {
+    e.style.opacity = "0";
+  });
+});
+
 // Handle button for carousel sliding
 document.addEventListener("click", (e) => {
   let carouselButton;

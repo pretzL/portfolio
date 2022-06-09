@@ -318,6 +318,7 @@ h4 {
   width: var(--arrow-size);
   cursor: pointer;
   display: flex;
+  opacity: 0;
   flex-direction: column;
   align-items: center;
   justify-content: center;

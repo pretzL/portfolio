@@ -20,16 +20,16 @@ iconButton.forEach((e) => {
 
 // Show or hide carousel buttons
 
-const carouselContainer = document.querySelector(".all-projects-container");
+const carousel = document.querySelector(".carousel");
 const arrow = document.querySelectorAll(".arrow");
 
-carouselContainer.addEventListener("mouseover", () => {
+carousel.addEventListener("mouseover", () => {
   arrow.forEach((e) => {
     e.style.opacity = "1";
   });
 });
 
-carouselContainer.addEventListener("mouseout", () => {
+carousel.addEventListener("mouseout", () => {
   arrow.forEach((e) => {
     e.style.opacity = "0";
   });

@@ -231,7 +231,6 @@ h4 {
 }
 
 .view-more-container {
-  margin-top: 2rem;
   align-self: flex-end;
 }
 
@@ -254,6 +253,32 @@ h4 {
 
 .contact-page {
   gap: 1rem;
+}
+
+.my-projects-page {
+  gap: 0;
+}
+
+.about-content {
+  display: grid;
+  align-items: center;
+  width: 70%;
+  gap: 1rem;
+  grid-template-areas:
+    "about-grid2 about-grid1"
+    "about-grid2 about-grid3";
+}
+
+.about-grid1 {
+  grid-area: about-grid1;
+}
+
+.about-grid2 {
+  grid-area: about-grid2;
+}
+
+.about-grid3 {
+  grid-area: about-grid3;
 }
 
 /* CAROUSEL */
@@ -332,6 +357,12 @@ h4 {
 .carousel-card > .card-image {
   width: auto;
   height: 160px;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
 }
 
 /* NAVIGATION */

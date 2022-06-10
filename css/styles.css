@@ -279,6 +279,12 @@ h4 {
   grid-area: about-grid3;
 }
 
+.education-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 /* CAROUSEL */
 
 .carousel {

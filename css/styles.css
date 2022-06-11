@@ -425,12 +425,19 @@ h4 {
   color: white;
 }
 
-.nav-active {
-  text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+.nav-line {
+  height: 1px;
+  width: 0%;
+  background-color: white;
+  transition: width 150ms ease-in-out;
 }
 
-.nav-link:hover {
-  text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+.nav-active + .nav-line {
+  width: 100%;
+}
+
+.nav-item:hover .nav-line {
+  width: 100%;
 }
 
 /* FORMS */

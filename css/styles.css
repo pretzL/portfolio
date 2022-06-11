@@ -760,11 +760,10 @@ textarea {
   }
 
   .contact-form-container {
-    width: 100%;
+    width: 80%;
   }
 
   .contact-form {
-    width: 80%;
-    align-self: center;
+    width: 100%;
   }
 }

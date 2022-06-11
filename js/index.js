@@ -72,24 +72,28 @@ function moveCarousel(button) {
   }
 }
 
-// ONSCROLL NAVIGATION FROM https://dev.to/areeburrub/change-nav-link-s-style-as-you-scroll-4p62
+// ONSCROLL NAVIGATION THANKS TO ALEXANDER BARRETT
 
-const pages = document.querySelectorAll(".slider-page");
-const navLi = document.querySelectorAll(".nav-link");
-document.onscroll = () => {
-  let current = "";
-  console.log("Scrolled!");
-  pages.forEach((page) => {
-    const pageTop = page.offsetTop;
-    if (scrollY >= pageTop - 60) {
-      current = pages.getAttribute("id");
-    }
-  });
+const slider = document.querySelector(".slider");
+const sections = document.querySelectorAll(".home, .about, .education, .contact, .projects");
+const navLinks = document.querySelectorAll(".nav-link");
 
-  navLi.forEach((li) => {
-    li.classList.remove("nav-active");
-    if (li.classList.contains(current)) {
-      li.classList.add("nav-active");
-    }
-  });
-};
+const sectionObservation = new IntersectionObserver((sections) => {
+  sections.forEach(
+    (section) => {
+      if (section.isIntersecting) {
+        navLinks.forEach((li) => {
+          li.classList.remove("nav-active");
+          if (li.href.includes(section.target.classList[0])) {
+            li.classList.add("nav-active");
+          }
+        });
+      }
+    },
+    { threshold: 0.3 }
+  );
+});
+
+sections.forEach((section) => {
+  sectionObservation.observe(section);
+});

@@ -22,11 +22,23 @@
           <nav class="navbar">
             <ul class="nav-menu">
               <li class="nav-item">
-                <a href="/index.html" class="nav-link nav-active">Home</a>
+                <a href="#home" class="nav-link nav-active">Home</a>
                 <div class="nav-line"></div>
               </li>
               <li class="nav-item">
-                <a href="/contact.html" class="nav-link">Contact</a>
+                <a href="#about" class="nav-link">About</a>
+                <div class="nav-line"></div>
+              </li>
+              <li class="nav-item">
+                <a href="#education" class="nav-link">Education</a>
+                <div class="nav-line"></div>
+              </li>
+              <li class="nav-item">
+                <a href="#projects" class="nav-link">Projects</a>
+                <div class="nav-line"></div>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
                 <div class="nav-line"></div>
               </li>
             </ul>
@@ -35,7 +47,7 @@
         <main>
           <div class="slider-wrapper">
             <div class="slider">
-              <div class="slider-page slider-page-one">
+              <div class="slider-page slider-page-one" id="home">
                 <div class="slider-page-content">
                   <h1>Hi, I'm Eric</h1>
                   <p>Welcome to my portfolio. Here you can see the projects I'm most proud of, or scroll down to read more about me.</p>
@@ -100,7 +112,7 @@
                   </div>
                 </div>
               </div>
-              <div class="slider-page slider-page-two">
+              <div class="slider-page slider-page-two" id="about">
                 <div class="slider-page-content about-content">
                   <h2 class="about-grid1">About Me</h2>
                   <img src="/images/profilepic.jpg" class="about-grid2 profile-img" alt="My profile picture" />
@@ -111,7 +123,7 @@
                   </p>
                 </div>
               </div>
-              <div class="slider-page slider-page-three">
+              <div class="slider-page slider-page-three" id="education">
                 <div class="slider-page-content education-section">
                   <div class="education-content">
                     <h2>Education</h2>
@@ -143,24 +155,7 @@
                   </div>
                 </div>
               </div>
-              <div class="slider-page slider-page-four">
-                <div class="slider-page-content">
-                  <h2>Contact</h2>
-                  <p>
-                    If you want to get in touch, you can use the buttons below to contact me on various social media, or you can contact me via the form in the Contact section of
-                    this site.
-                  </p>
-                  <div class="contact-icons">
-                    <a href="https://www.linkedin.com/in/eric-pretzinger-0753551a4/" target="_blank"><i class="fa-brands fa-linkedin icon icon-large"></i></a>
-                    <a href="mailto:ericpretzinger@gmail.com" target="_blank"><i class="fa-solid fa-envelope icon icon-large"></i></a>
-                    <a href="https://discordapp.com/users/210403855442247680" class="social-icons" target="_blank">
-                      <span class="tooltip">pretzL#0001</span>
-                      <i class="fa-brands fa-discord icon icon-large"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="slider-page slider-page-five">
+              <div class="slider-page slider-page-four" id="projects">
                 <div class="slider-page-content my-projects-page">
                   <h2>My Projects</h2>
                   <div class="carousel">
@@ -250,12 +245,64 @@
                   </div>
                 </div>
               </div>
+              <div class="slider-page slider-page-five" id="contact">
+                <div class="slider-page-content">
+                  <h2>Contact</h2>
+                  <p>
+                    If you want to get in touch, you can use the buttons below to contact me on various social media, or you can contact me via the form in the Contact section of
+                    this site.
+                  </p>
+                  <div class="contact-icons">
+                    <a href="https://www.linkedin.com/in/eric-pretzinger-0753551a4/" target="_blank"><i class="fa-brands fa-linkedin icon icon-large"></i></a>
+                    <a href="mailto:ericpretzinger@gmail.com" target="_blank"><i class="fa-solid fa-envelope icon icon-large"></i></a>
+                    <a href="https://discordapp.com/users/210403855442247680" class="social-icons" target="_blank">
+                      <span class="tooltip">pretzL#0001</span>
+                      <i class="fa-brands fa-discord icon icon-large"></i>
+                    </a>
+                  </div>
+                  <div class="contact-form-container">
+                    <h3>Contact Me</h3>
+                    <div class="validator-container"><p>Form sent!</p></div>
+                    <form class="contact-form">
+                      <div class="form-input">
+                        <label>
+                          Name (required)
+                          <input name="your-name" id="your-name" />
+                        </label>
+                        <div class="form-error" id="your-name-error">Please enter your name, must be 5 characters or more</div>
+                      </div>
+                      <div class="form-input">
+                        <label>
+                          Email (required)
+                          <input type="email" name="your-email" id="your-email" />
+                          <div class="form-error" id="email-error">Please enter a valid email address</div>
+                        </label>
+                      </div>
+                      <div class="form-input">
+                        <label>
+                          Subject (required)
+                          <input name="your-subject" id="your-subject" />
+                          <div class="form-error" id="subject-error">Your subject must be at least 15 characters</div>
+                        </label>
+                      </div>
+                      <div class="form-input">
+                        <label>
+                          Message (required)
+                          <textarea name="your-message" id="your-message" rows="4" class="message-input"></textarea>
+                          <div class="form-error" id="message-error">Your message must be at least 25 characters</div>
+                        </label>
+                      </div>
+                      <button class="btn form-btn">Submit</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </main>
-        <footer></footer>
       </div>
     </div>
     <script src="js/index.js" type="module"></script>
+    <script src="js/contact.js" type="module"></script>
   </body>
 </html>

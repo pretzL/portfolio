@@ -71,3 +71,25 @@ function moveCarousel(button) {
     }
   }
 }
+
+// ONSCROLL NAVIGATION FROM https://dev.to/areeburrub/change-nav-link-s-style-as-you-scroll-4p62
+
+const pages = document.querySelectorAll(".slider-page");
+const navLi = document.querySelectorAll(".nav-link");
+document.onscroll = () => {
+  let current = "";
+  console.log("Scrolled!");
+  pages.forEach((page) => {
+    const pageTop = page.offsetTop;
+    if (scrollY >= pageTop - 60) {
+      current = pages.getAttribute("id");
+    }
+  });
+
+  navLi.forEach((li) => {
+    li.classList.remove("nav-active");
+    if (li.classList.contains(current)) {
+      li.classList.add("nav-active");
+    }
+  });
+};

@@ -166,17 +166,21 @@ main {
 }
 
 .slider-page:nth-child(4) {
-  background-color: #d4bb3b;
-  color: #2c2c2c;
-}
-
-.slider-page:nth-child(5) {
   padding: 80px 0;
   background-color: #ec5642;
 }
 
-.slider-page-five .slider-page-content {
+.slider-page:nth-child(5) {
+  background-color: #d4bb3b;
+  color: #2c2c2c;
+}
+
+.slider-page-four .slider-page-content {
   width: 90%;
+}
+
+.slider-page-five {
+  padding: 3.5rem 0 5rem 0;
 }
 
 .slider-cards {
@@ -260,7 +264,6 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
   gap: 2rem;
 }
 
@@ -402,7 +405,6 @@ h4 {
   position: static;
   display: flex;
   top: 0;
-  padding: 1rem;
   width: auto;
 }
 
@@ -459,15 +461,22 @@ h4 {
   margin-bottom: 1rem;
 }
 
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  align-self: center;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-decoration: none;
   color: black;
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: var(--light-grey);
-  width: 90%;
   border: var(--border) black;
   border-radius: 10px;
   margin-bottom: 1rem;
@@ -483,7 +492,7 @@ h4 {
 }
 
 .form-input {
-  width: 80%;
+  width: 90%;
 }
 
 .btn {
@@ -611,12 +620,6 @@ textarea {
     font-size: 1.1rem;
   }
 
-  .contact-form {
-    width: 40%;
-    padding-top: 2rem;
-    margin-bottom: 3rem;
-  }
-
   .all-projects-container {
     --items-per-screen: 2;
   }
@@ -696,5 +699,14 @@ textarea {
 
   .slider-page-content {
     width: 70%;
+  }
+
+  .contact-form-container {
+    width: 100%;
+  }
+
+  .contact-form {
+    width: 80%;
+    align-self: center;
   }
 }

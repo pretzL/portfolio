@@ -14,107 +14,19 @@
         <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400&family=Square+Peg&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link href="/css/styles.css" rel="stylesheet" />
+        <script src="js/index.js" type="module" defer></script>
         <title>Home | Eric Pretzinger</title>
     </head>
-    <body>
+    <body class="hover-scrollbar">
         <div class="content-wrapper">
             <div class="content-container">
-                <header>
-                    <nav class="navbar">
-                        <span class="material-symbols-outlined menu-icon"> menu </span>
-                        <ul class="nav-menu">
-                            <li class="nav-item">
-                                <a href="#home" class="nav-link nav-active home">Home</a>
-                                <div class="nav-line"></div>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#about" class="nav-link about">About</a>
-                                <div class="nav-line"></div>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#education" class="nav-link education">Education</a>
-                                <div class="nav-line"></div>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#projects" class="nav-link projects">Projects</a>
-                                <div class="nav-line"></div>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#contact" class="nav-link contact">Contact</a>
-                                <div class="nav-line"></div>
-                            </li>
-                        </ul>
-                    </nav>
-                </header>
                 <main>
                     <div class="slider-wrapper">
-                        <div class="slider">
+                        <div class="slider hover-scrollbar">
                             <div class="slider-page slider-page-one" id="home">
                                 <div class="slider-page-content">
                                     <h1 class="home">Hi, I'm Eric</h1>
                                     <p>Welcome to my portfolio. Here you can see the projects I'm most proud of, or scroll down to read more about me.</p>
-                                    <div class="slider-cards">
-                                        <div class="card">
-                                            <div class="card-image auc-image card-grid1"></div>
-                                            <h4 class="card-grid2">Auctioneer</h4>
-                                            <p class="card-grid3">
-                                                An auction house website where users can add items to be bid on and bid on items other users have put up for auction.
-                                            </p>
-                                            <div class="social-icons-container">
-                                                <a href="https://github.com/pretzL/Auctioneer" target="_blank">
-                                                    <div class="social-icons">
-                                                        <span class="tooltip">GitHub</span>
-                                                        <i class="fa-brands fa-github icon"></i>
-                                                    </div>
-                                                </a>
-                                                <a href="https://auctioneer-sp2.netlify.app/" target="_blank">
-                                                    <div class="social-icons">
-                                                        <span class="tooltip">Website</span>
-                                                        <i class="fa-solid fa-globe icon"></i>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-image gamehub-image card-grid1"></div>
-                                            <h4 class="card-grid2">GameHub</h4>
-                                            <p class="card-grid3">A game marketplace for my cross-course project at Noroff. Made with RAWG API.</p>
-                                            <div class="social-icons-container">
-                                                <a href="https://github.com/pretzL/cross-course-project-pretzl-rawg" target="_blank">
-                                                    <div class="social-icons">
-                                                        <span class="tooltip">GitHub</span>
-                                                        <i class="fa-brands fa-github icon"></i>
-                                                    </div>
-                                                </a>
-                                                <a href="https://pretzl-gamehub-rawg.netlify.app/" target="_blank">
-                                                    <div class="social-icons">
-                                                        <span class="tooltip">Website</span>
-                                                        <i class="fa-solid fa-globe icon"></i>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-image bazaari-image card-grid1"></div>
-                                            <h4 class="card-grid2">Bazaari</h4>
-                                            <p class="card-grid3">An online e-commerce website created with React</p>
-                                            <div class="social-icons-container">
-                                                <a href="https://github.com/pretzL/JS-Frameworks-CA" target="_blank">
-                                                    <div class="social-icons">
-                                                        <span class="tooltip">GitHub</span>
-                                                        <i class="fa-brands fa-github icon"></i>
-                                                    </div>
-                                                </a>
-                                                <a href="https://bazaari.netlify.app/" target="_blank">
-                                                    <div class="social-icons">
-                                                        <span class="tooltip">Website</span>
-                                                        <i class="fa-solid fa-globe icon"></i>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                             <div class="slider-page slider-page-two" id="about">
                                 <div class="slider-page-content about-content">
@@ -368,8 +280,7 @@
                                 <div class="slider-page-content">
                                     <h2 class="contact">Contact</h2>
                                     <p>
-                                        If you want to get in touch, you can use the buttons below to contact me on various social media, or you can contact me via the form in the
-                                        Contact section of this site.
+                                        If you want to get in touch, you can use the buttons below to contact me on various social media.
                                     </p>
                                     <div class="contact-icons">
                                         <a href="https://www.linkedin.com/in/eric-pretzinger-0753551a4/" target="_blank"><i class="fa-brands fa-linkedin icon icon-large"></i></a>
@@ -379,41 +290,6 @@
                                             <i class="fa-brands fa-discord icon icon-large"></i>
                                         </a>
                                     </div>
-                                    <div class="contact-form-container">
-                                        <h3>Contact Me</h3>
-                                        <div class="validator-container"><p>Form sent!</p></div>
-                                        <form class="contact-form">
-                                            <div class="form-input">
-                                                <label>
-                                                    Name (required)
-                                                    <input name="your-name" id="your-name" />
-                                                </label>
-                                                <div class="form-error" id="your-name-error">Please enter your name, must be 5 characters or more</div>
-                                            </div>
-                                            <div class="form-input">
-                                                <label>
-                                                    Email (required)
-                                                    <input type="email" name="your-email" id="your-email" />
-                                                    <div class="form-error" id="email-error">Please enter a valid email address</div>
-                                                </label>
-                                            </div>
-                                            <div class="form-input">
-                                                <label>
-                                                    Subject (required)
-                                                    <input name="your-subject" id="your-subject" />
-                                                    <div class="form-error" id="subject-error">Your subject must be at least 15 characters</div>
-                                                </label>
-                                            </div>
-                                            <div class="form-input">
-                                                <label>
-                                                    Message (required)
-                                                    <textarea name="your-message" id="your-message" rows="4" class="message-input"></textarea>
-                                                    <div class="form-error" id="message-error">Your message must be at least 25 characters</div>
-                                                </label>
-                                            </div>
-                                            <button class="btn form-btn">Submit</button>
-                                        </form>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -421,8 +297,5 @@
                 </main>
             </div>
         </div>
-        <script src="js/index.js" type="module"></script>
-        <script src="js/contact.js" type="module"></script>
-        <script src="js/navigation.js" type="module"></script>
     </body>
 </html>
